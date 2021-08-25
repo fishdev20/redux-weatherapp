@@ -1,0 +1,57 @@
+.today-row {
+    row-gap: 20px;
+  }
+.box {
+    cursor: pointer;
+    margin: 10px;
+    background-color: white;
+    height: 190px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.today-des {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.today-col .today-des p {
+    font-size: 28px;
+    font-weight: bold;
+}
+.today-des .today-icon {
+    color: orange;
+    font-size: 40px;
+}
+
+.sunset-sunrise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+}
+
+
+.box h6 {
+    margin: 8px;
+}
+
+@media only screen and (max-width:768px) {
+
+/* .today-info {
+    height: 100%;
+    overflow: hidden;
+} */
+/* .sunset-sunrise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+} */
+}

@@ -1,0 +1,39 @@
+.col-search {
+    position: relative;
+    background-color: white;
+    min-height: 90vh; 
+  }
+.search-form {
+    padding: 20px 20px;
+}
+.search-form .imgcss { 
+   text-align: center;    
+}
+.img-box img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.img-box { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.image{
+    cursor:pointer;
+    
+}
+
+.spiner {
+    position: absolute;
+    top: 50%;
+    left:45%;
+    
+    
+}

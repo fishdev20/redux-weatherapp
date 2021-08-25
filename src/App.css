@@ -1,0 +1,121 @@
+#root {
+  background-color: #d4dbf1;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.App {
+  
+  width:100%;
+  padding: 30px 0;
+  height: 100vh;
+}
+
+.weather-info 
+ {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  overflow-y: visible;
+  height: 90vh;
+  padding-right: 12px;
+}
+.info-container {
+  padding-right: 12px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+.navbar  ul li {
+  text-decoration: none; 
+  margin: 8px;
+}
+.navbar img{
+  cursor: pointer;
+  width: 100%;
+  object-fit: contain;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*end nav */
+
+.tabs {
+  text-decoration: none; 
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  opacity: 0.5;
+  padding-bottom: 3px;
+  
+}
+.active-tabs  {
+  opacity: 1;
+  border-bottom: 3px solid black;
+}
+
+.weather-info {
+  position: relative;
+  overflow-y: auto;
+  min-height: 90vh;
+}
+@media only screen and (max-width:768px) {
+  .App {
+    padding: 0;
+  }
+  .weather-info{
+   height: 100%;
+  overflow-x: hidden;
+  }
+  .info-container {
+    padding: 0 12px;
+  }
+  
+  
+  .col-search {
+    padding-bottom: 20px;
+  }
+  
+  #root {
+    overflow-y: visible;
+  }
+}
+.alert {
+  margin-top: 20px;
+}
+.weather-info .load {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
